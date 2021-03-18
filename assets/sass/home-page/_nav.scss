@@ -1,0 +1,81 @@
+body {
+
+
+
+
+    .container-nav {
+        max-width: 1170px;
+        padding: 0 15px 0 15px;
+        margin: 0 auto;
+        position: relative;
+
+        .nav-pos {
+            position: fixed;
+            z-index: 4;
+        }
+
+        .navigation {
+
+            width: 100%;
+            display: flex;
+
+            z-index: 4;
+
+            .nav-image {
+                padding: 15px 0 0 0;
+                width: 50%;
+
+
+            }
+
+            .nav-text {
+                display: flex;
+                width: 50%;
+
+
+
+                .nav-texts {
+                    display: flex;
+
+
+
+                    li {
+
+                        padding: 0 15px;
+
+
+                        .vl {
+
+                            border-left: 1px solid rgb(185, 179, 179);
+                            height: 15px;
+
+
+
+
+                        }
+
+                        a {
+                            color: $backgroundVideoColor;
+                            display: flex;
+
+
+
+
+
+                            &:hover {
+                                opacity: 0.3;
+                            }
+
+                        }
+
+
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+}

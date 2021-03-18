@@ -1,0 +1,102 @@
+.delivery {
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+    .delivery-picture {
+        width: 50%;
+        background-image: url("../image/services-classic-03.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        img {
+
+
+            display: none;
+
+            @media (max-width: 992px) {
+                display: block;
+                width: 100%
+            }
+        }
+
+        @media (max-width: 992px) {
+
+            width: 100%
+        }
+
+
+    }
+
+    .delivery-descriptions {
+        background-color: $deliveryBackgroundColor;
+        width: 50%;
+        padding: 100px 100px 70px 100px;
+
+        @media(max-width: 1200px) {
+            padding: 50px 50px 20px 50px;
+        }
+
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+
+        h3 {
+            @include fluid-type(20px, 40px);
+            font-weight: 600;
+            margin: 0 0 50px 0;
+        }
+
+
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+
+
+
+            .box {
+                width: 50%;
+                padding: 0 15px;
+                margin: 0 0 30px 0;
+                display: flex;
+
+                @media (max-width: 1200px) {
+                    width: 100%;
+
+
+                }
+
+                i {
+                    width: 25%;
+                    font-size: 35px;
+                    color: $primaryTextColor;
+                }
+
+                .data {
+                    width: 75%;
+
+                    h5 {
+
+                        margin: 6px 0 10px 0;
+                    }
+
+
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        color: $primaryTextColor;
+
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
